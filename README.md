@@ -57,6 +57,9 @@ By default, tapping on the greyed out space around the modal will dismiss it. Th
 }
 ```
 
+> [!WARNING]
+> If you disable background clicks,  it is your responsibility to provide an alternative means of dismissing the modal (see below).
+
 You can also dismiss the modal programmatically inside the modal view itself. If you are coding the modal inline, you can
 alter your `isPresented` state variable directly:
 
@@ -68,6 +71,8 @@ alter your `isPresented` state variable directly:
 
 If you are using a custom view for your modal content, you could pass the state variable into a @Binding value. However, the 
 preferred method is to use a `.dismissModal` environment function.
+
+`.dismissModal` works in the same way as `.dismiss` for SwiftUI's native views.
 
 ```swift
 import SwiftUI
@@ -89,6 +94,6 @@ struct MyCustomModal: View {
 }
 ```
 
-> [!CAUTION]
+> [!NOTE]
 > If you attempt to access the `dismissModal` environment variable and there is no `.customModalRoot()` in a
-> parent view, your application may crash.
+> parent view, the call will have no effect.
