@@ -21,6 +21,7 @@ struct ModalPresentationModifier: ViewModifier {
                     .fill(.background)
                     .shadow(radius: 10)
             )
+            .padding()
     }
 }
 
