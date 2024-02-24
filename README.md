@@ -2,6 +2,8 @@
 
 An implementation of a small modal view, with a similar API to SwiftUI's native `.sheet` and `.fullScreenCover` modals.
 
+![Example of a custom modal in action](./custom-modal-example.gif)
+
 ## Usage
 
 The `.customModalRoot()` modifier must be applied at the top level for your view hierarchy. This will typically be the
