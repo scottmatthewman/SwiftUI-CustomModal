@@ -24,7 +24,7 @@ struct MyApp: App {
 
 Within any subviews, you can define modals to display, using a Boolean `@State` variable to manage the modal's visibility.
 
-```
+```swift
 import SwiftUI
 import CustomModal
 
