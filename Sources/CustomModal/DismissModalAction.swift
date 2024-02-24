@@ -10,7 +10,7 @@ import SwiftUI
 public struct DismissModalAction {
     internal var action: () -> Void
 
-    func callAsFunction() {
+    public func callAsFunction() {
         action()
     }
 }
